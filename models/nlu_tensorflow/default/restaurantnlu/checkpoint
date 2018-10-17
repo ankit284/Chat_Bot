@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/ankitsinghai/ML & AI/NLP/rasa_chat_bot_project/Chat Bot/Chat_Bot/./models/nlu_tensorflow/default/restaurantnlu/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/Users/ankitsinghai/ML & AI/NLP/rasa_chat_bot_project/Chat Bot/Chat_Bot/./models/nlu_tensorflow/default/restaurantnlu/intent_classifier_tensorflow_embedding.ckpt"
