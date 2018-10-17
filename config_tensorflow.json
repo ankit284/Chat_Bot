@@ -1,5 +1,5 @@
 {
-  "language":"en"
+  "language":"en",
   "pipeline":"tensorflow_embedding",
   "path":"./models/nlu",
   "data":"./data/nlu_data.json"
