@@ -4,20 +4,26 @@ from rasa_nlu.model import Trainer
 from rasa_nlu.model import Metadata, Interpreter
 from rasa_nlu import config
 from rasa_nlu.components import ComponentBuilder
+import json
 
 builder = ComponentBuilder(use_cache=True)
 
-def train_nlu(data, config_file, model_dir):
-        training_data = load_data(data)
-        trainer = Trainer(config.load(config_file), builder)
-        trainer.train(training_data)
-        model_directory = trainer.persist(model_dir, fixed_model_name = 'restaurantnlu')
+with open('./config_tensorflow.json') as conf_file:
+	config_data = json.load(conf_file)
 
-def run_nlu():
-        interpreter = Interpreter.load('./models/nlu/default/restaurantnlu', builder)
+def train_nlu(config_data):
+        training_data = load_data(config_data["data"])
+        trainer = Trainer(config.load('./config_tensorflow.json'), builder)
+        trainer.train(training_data)
+        model_directory = trainer.persist(config_data["path"], fixed_model_name = 'restaurantnlu')
+
+
+def run_nlu(config_data):
+        interpreter = Interpreter.load(config_data["path"]+'/default/restaurantnlu', builder)
         print(interpreter.parse("can you please suggest food"))
 
 if __name__ == '__main__':
-        train_nlu('./data/nlu_data.json', 'config_tensorflow.json', './models/nlu_tensorflow')
-        run_nlu()
+	train_nlu(config_data)
+	run_nlu(config_data)
+
 

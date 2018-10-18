@@ -878,6 +878,274 @@
       {
         "intent": "goodbye",
         "text": "thanks bot"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "3 people",
+            "entity": "people"
+          }
+        ],
+        "text": "for 3 people"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "2 guys",
+            "entity": "people"
+          }
+        ],
+        "text": "share the details for 2 guys"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "2 gals",
+            "entity": "people"
+          }
+        ],
+        "text": "get the details for 2 gals"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "2 men",
+            "entity": "people"
+          }
+        ],
+        "text": "for 2 men get the details"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "looking for American food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "itialian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "good itialian stuff"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "exquisite north indian buffet"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Thai",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "mouth watering Thai ala carte"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "delicious south indian food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "tasty north indian sweets shop"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "looking for good italian pasta"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "Mexican delicacies"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "good American breakfast"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "great Italian food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "looking for South Indian sweets"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 21,
+            "end": 41,
+            "value": "test1234_xyz@abc.com",
+            "entity": "email"
+          }
+        ],
+        "text": "share the details on test1234_xyz@abc.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 3,
+            "end": 19,
+            "value": "test9876@abc.com",
+            "entity": "email"
+          }
+        ],
+        "text": "on test9876@abc.com share the restaurants"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 26,
+            "end": 40,
+            "value": "haahaa@haa.com",
+            "entity": "email"
+          }
+        ],
+        "text": "great mail me the list on haahaa@haa.com"
+      },
+      {
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "yahoo@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "yeah mail me on yahoo@gmail.com"
+      },
+      {
+        "intent": "goodbye",
+        "text": "thanks dude"
+      },
+      {
+        "intent": "goodbye",
+        "text": "your welcome "
+      },
+      {
+        "intent": "goodbye",
+        "text": "bon apetite"
+      },
+      {
+        "intent": "goodbye",
+        "text": "great bot thanks"
+      },
+      {
+        "intent": "affirm",
+        "text": "yupeee"
+      },
+      {
+        "intent": "affirm",
+        "text": "yess"
+      },
+      {
+        "intent": "greet",
+        "text": "hey dude"
+      },
+      {
+        "intent": "greet",
+        "text": "hello madam"
+      },
+      {
+        "intent": "greet",
+        "text": "hi, bot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cya"
       }
     ],
     "regex_features": [

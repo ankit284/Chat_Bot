@@ -1,6 +1,6 @@
 {
   "language":"en",
   "pipeline":"tensorflow_embedding",
-  "path":"./models/nlu",
+  "path":"./models/nlu_tensorflow",
   "data":"./data/nlu_data.json"
 }
