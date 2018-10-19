@@ -72,7 +72,7 @@ templates:
       - title: "More than 700"
         payload: ">700"
   utter_ask_send_email:
-    - text: "Provide email send to send restaurants list"
+    - text: "Provide email on which to send restaurants list"
 
 actions:
 - utter_greet
