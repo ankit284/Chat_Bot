@@ -8,7 +8,7 @@ action_names:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
-- utter_ask_budget
+- utter_ask_price
 - utter_ask_send_email
 - action_restaurant
 - action_send_email
@@ -21,7 +21,7 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
-- utter_ask_budget
+- utter_ask_price
 - utter_ask_send_email
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
@@ -31,8 +31,7 @@ entities:
 - location
 - cuisine
 - email
-- budget
-- person
+- price
 intents:
 - greet
 - affirm
@@ -40,17 +39,10 @@ intents:
 - goodbyes
 - restaurant_search
 - send_email
-- budget
+- price
 - location
 - cuisine
 slots:
-  budget:
-    initial_value: null
-    type: rasa_core.slots.CategoricalSlot
-    values:
-    - < 300
-    - 300 - 700
-    - 700 >
   cuisine:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -60,9 +52,13 @@ slots:
   location:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  person:
+  price:
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - < 300
+    - 300 - 700
+    - 700 >
 templates:
   utter_affirm:
   - text: ok
@@ -70,15 +66,6 @@ templates:
   - text: okie
   - text: yeah
   - text: yes
-  utter_ask_budget:
-  - buttons:
-    - payload: <300
-      title: Less then 300
-    - payload: 300 - 700
-      title: 300 to 700
-    - payload: '>700'
-      title: More than 700
-    text: What is your budget
   utter_ask_cuisine:
   - buttons:
     - payload: Chinese
@@ -98,6 +85,15 @@ templates:
   - text: how can I help you?
   utter_ask_location:
   - text: In what location?
+  utter_ask_price:
+  - buttons:
+    - payload: <300
+      title: Less then 300
+    - payload: 300 - 700
+      title: 300 to 700
+    - payload: '>700'
+      title: More than 700
+    text: What is your budget
   utter_ask_send_email:
   - text: Provide email on which to send restaurants list
   utter_default:

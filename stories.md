@@ -22,3 +22,22 @@
     - utter_goodbye
     - export
 
+## Generated Story 5563939221839938948
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_location
+* restaurant_search{"location": "hyderabad"}
+    - slot{"location": "hyderabad"}
+    - utter_ask_price
+* restaurant_search{"price": "700"}
+    - slot{"price": "700"}
+    - action_restaurant
+    - slot{"location": "hyderabad"}
+    - utter_ask_send_email
+* send_email{"email": "abcd@123.com"}
+    - slot{"email": "abcd@123.com"}
+    - utter_goodbye
+    - export
+

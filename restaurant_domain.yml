@@ -5,21 +5,18 @@ slots:
     type: text
   email:
     type: text
-  budget:
+  price:
     type: categorical
     values:
     - < 300
     - 300 - 700
     - 700 >
-  person:
-    type: text
 
 entities:
 - location
 - cuisine
 - email
-- budget
-- person
+- price
 
 intents:
  - greet
@@ -28,7 +25,7 @@ intents:
  - goodbyes
  - restaurant_search
  - send_email
- - budget
+ - price
  - location
  - cuisine
 
@@ -72,7 +69,7 @@ templates:
     - "how can I help you?"
   utter_ask_location:
     - "In what location?"
-  utter_ask_budget:
+  utter_ask_price:
     - text: "What is your budget"	
       buttons:
       - title: "Less then 300"
@@ -93,7 +90,7 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
-- utter_ask_budget
+- utter_ask_price
 - utter_ask_send_email
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
