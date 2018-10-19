@@ -34,3 +34,11 @@ class ActionSearchRestaurants(Action):
                 dispatcher.utter_message("-----"+response)
                 return [SlotSet('location',loc)]
 
+class ActionSendEmail(Action):
+        def name(self):
+                return 'action_send_email'
+
+        def run(self, dispatcher, tracker, domain):
+                dispatcher.utter_message("-----")
+                return [SlotSet('email','xyz@abc.com')]
+
