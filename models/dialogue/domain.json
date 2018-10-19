@@ -8,6 +8,7 @@
     "intent_send_email",
     "intent_budget",
     "intent_location",
+    "intent_cuisine",
     "entity_location",
     "entity_cuisine",
     "entity_email",

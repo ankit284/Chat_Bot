@@ -30,6 +30,7 @@ intents:
  - send_email
  - budget
  - location
+ - cuisine
 
 templates:
   utter_greet:

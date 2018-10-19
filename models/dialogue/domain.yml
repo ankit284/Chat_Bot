@@ -42,6 +42,7 @@ intents:
 - send_email
 - budget
 - location
+- cuisine
 slots:
   budget:
     initial_value: null
