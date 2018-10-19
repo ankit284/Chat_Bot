@@ -430,22 +430,16 @@
             "start": 34,
             "end": 42,
             "value": "mid",
-            "entity": "price"
+            "entity": "budget"
           },
           {
             "start": 60,
             "end": 67,
             "value": "british",
             "entity": "cuisine"
-          },
-          {
-            "start": 77,
-            "end": 81,
-            "value": "4",
-            "entity": "people"
           }
         ],
-        "text": "can you book a table in rome in a moderate price range with british food for four people"
+        "text": "can you book a table in rome in a moderate budget range with british food for four people"
       },
       {
         "intent": "restaurant_search",
@@ -630,13 +624,7 @@
             "start": 117,
             "end": 120,
             "value": "500",
-            "entity": "price"
-          },
-          {
-            "start": 125,
-            "end": 133,
-            "value": "2 people",
-            "entity": "people"
+            "entity": "budget"
           }
         ],
         "text": "please mail me the list of good north indian restaurants in southern bombay at testabc@xyz.in, cost should be within 500 for 2 people"
@@ -666,13 +654,7 @@
             "start": 106,
             "end": 109,
             "value": "300",
-            "entity": "price"
-          },
-          {
-            "start": 114,
-            "end": 122,
-            "value": "1 person",
-            "entity": "people"
+            "entity": "budget"
           }
         ],
         "text": "send me the list of good south indian restaurants in north dilli at test123@xyz.in, cost should be within 300 for 1 person"
@@ -701,17 +683,11 @@
           {
             "start": 79,
             "end": 93,
-            "value": "no price limit",
-            "entity": "price"
-          },
-          {
-            "start": 98,
-            "end": 106,
-            "value": "2 people",
-            "entity": "people"
+            "value": "no budget limit",
+            "entity": "budget"
           }
         ],
-        "text": "share the list of good veg Italian restaurants in hyderabad at testabc@xyz.in, no price limit for 2 people"
+        "text": "share the list of good veg Italian restaurants in hyderabad at testabc@xyz.in, no budget limit for 2 people"
       },
       {
         "intent": "restaurant_search",
@@ -727,12 +703,6 @@
             "end": 38,
             "value": "veg north indian",
             "entity": "cuisine"
-          },
-          {
-            "start": 54,
-            "end": 62,
-            "value": "3 people",
-            "entity": "people"
           }
         ],
         "text": "in madras get me good veg north indian restaurant for 3 people"
@@ -751,12 +721,6 @@
             "end": 33,
             "value": "Poona ",
             "entity": "location"
-          },
-          {
-            "start": 37,
-            "end": 45,
-            "value": "2 people",
-            "entity": "people"
           },
           {
             "start": 66,
@@ -783,16 +747,10 @@
             "entity": "location"
           },
           {
-            "start": 42,
-            "end": 50,
-            "value": "3 people",
-            "entity": "people"
-          },
-          {
             "start": 58,
             "end": 61,
             "value": "700",
-            "entity": "price"
+            "entity": "budget"
           },
           {
             "start": 82,
@@ -819,16 +777,10 @@
             "entity": "location"
           },
           {
-            "start": 43,
-            "end": 51,
-            "value": "2 people",
-            "entity": "people"
-          },
-          {
             "start": 67,
             "end": 70,
             "value": "600",
-            "entity": "price"
+            "entity": "budget"
           },
           {
             "start": 82,
@@ -855,12 +807,6 @@
             "entity": "location"
           },
           {
-            "start": 44,
-            "end": 52,
-            "value": "3 people",
-            "entity": "people"
-          },
-          {
             "start": 73,
             "end": 84,
             "value": "y2k@abc.com",
@@ -870,7 +816,7 @@
             "start": 92,
             "end": 96,
             "value": "2000",
-            "entity": "price"
+            "entity": "budget"
           }
         ],
         "text": "high class american restaurant in Poona for 3 people, mail me details at y2k@abc.com budget 2000"
@@ -881,50 +827,18 @@
       },
       {
         "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 4,
-            "end": 12,
-            "value": "3 people",
-            "entity": "people"
-          }
-        ],
         "text": "for 3 people"
       },
       {
         "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 22,
-            "end": 28,
-            "value": "2 guys",
-            "entity": "people"
-          }
-        ],
         "text": "share the details for 2 guys"
       },
       {
         "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 20,
-            "end": 26,
-            "value": "2 gals",
-            "entity": "people"
-          }
-        ],
         "text": "get the details for 2 gals"
       },
       {
         "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 4,
-            "end": 9,
-            "value": "2 men",
-            "entity": "people"
-          }
-        ],
         "text": "for 2 men get the details"
       },
       {
@@ -1146,9 +1060,219 @@
       {
         "intent": "goodbye",
         "text": "cya"
+      },
+      {
+        "intent": "deny",
+        "text": "no thanks"
+      },
+      {
+        "intent": "deny",
+        "text": "nope "
+      },
+      {
+        "intent": "deny",
+        "text": "naah "
+      },
+      {
+        "intent": "deny",
+        "text": "not needed"
+      },
+      {
+        "intent": "deny",
+        "text": "thanks but no need to send an email"
+      },
+      {
+        "intent": "deny",
+        "text": "thanks but email not needed"
+      },
+      {
+        "intent": "deny",
+        "text": "thanks but mail not required"
+      },
+      {
+        "intent": "budget",
+        "text": "what is the budget you are looking ?"
+      },
+      {
+        "intent": "location",
+        "text": "in what location"
+      },
+      {
+        "intent": "budget",
+        "text": "may I know the budget for 2 people"
+      },
+      {
+        "intent": "budget",
+        "text": "please tell the budget for 3 people"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "looking for restaurant in Hyderabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Chines",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "Chines"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "Italian"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "North Indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "North Indian"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "South Indian"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "American"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "chinese"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "mexican"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "mex",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "mex"
+      },
+      {
+        "intent": "location",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "in hyderabad"
+      },
+      {
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "Delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "Bhilai",
+            "entity": "location"
+          }
+        ],
+        "text": "looking for good restaurant in Bhilai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 34,
+            "end": 41,
+            "value": "Mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 56,
+            "end": 64,
+            "value": "Amritsar",
+            "entity": "location"
+          }
+        ],
+        "text": "i am hungry, looking out for good Mexican restaurant in Amritsar"
       }
     ],
     "regex_features": [
+      {
+        "name": "budget",
+        "pattern": "[0-9]{3,5}"
+      },
       {
         "name": "email",
         "pattern": "[a-zA-Z]{1}(\\w|\\.|\\+|-)*@[a-zA-Z]{1}(\\w|-)*\\.[\\w]{2,}"
@@ -1156,10 +1280,6 @@
       {
         "name": "greet",
         "pattern": "hey[^\\s]*"
-      },
-      {
-        "name": "price",
-        "pattern": "[0-9]{3,5}"
       },
       {
         "name": "zipcode",

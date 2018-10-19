@@ -1,1169 +1,21 @@
-{
+﻿{
   "rasa_nlu_data": {
-    "common_examples": [
-      {
-        "intent": "greet",
-        "text": "hey"
-      },
-      {
-        "intent": "greet",
-        "text": "halo"
-      },
-      {
-        "intent": "greet",
-        "text": "howdy"
-      },
-      {
-        "intent": "greet",
-        "text": "hey there"
-      },
-      {
-        "intent": "greet",
-        "text": "hello"
-      },
-      {
-        "intent": "greet",
-        "text": "hi"
-      },
-      {
-        "intent": "greet",
-        "text": "hi there"
-      },
-      {
-        "intent": "greet",
-        "text": "good morning"
-      },
-      {
-        "intent": "greet",
-        "text": "good afternoon"
-      },
-      {
-        "intent": "greet",
-        "text": "good noon"
-      },
-      {
-        "intent": "greet",
-        "text": "good evening"
-      },
-      {
-        "intent": "greet",
-        "text": "dear sir"
-      },
-      {
-        "intent": "affirm",
-        "text": "yes"
-      },
-      {
-        "intent": "affirm",
-        "text": "yep"
-      },
-      {
-        "intent": "affirm",
-        "text": "yeah"
-      },
-      {
-        "intent": "affirm",
-        "text": "indeed"
-      },
-      {
-        "intent": "affirm",
-        "text": "that's right"
-      },
-      {
-        "intent": "affirm",
-        "text": "ok"
-      },
-      {
-        "intent": "affirm",
-        "text": "okay"
-      },
-      {
-        "intent": "affirm",
-        "text": "okie"
-      },
-      {
-        "intent": "affirm",
-        "text": "great"
-      },
-      {
-        "intent": "affirm",
-        "text": "right, thank you"
-      },
-      {
-        "intent": "affirm",
-        "text": "correct"
-      },
-      {
-        "intent": "affirm",
-        "text": "great choice"
-      },
-      {
-        "intent": "affirm",
-        "text": "sounds really good"
-      },
-      {
-        "intent": "restaurant_search",
-        "text": "i'm looking for a place to eat"
-      },
-      {
-        "intent": "restaurant_search",
-        "text": "I want to grab lunch"
-      },
-      {
-        "intent": "restaurant_search",
-        "text": "I am searching for a dinner spot"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 31,
-            "end": 36,
-            "value": "north",
-            "entity": "location"
-          }
-        ],
-        "text": "i'm looking for a place in the north of town"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 8,
-            "end": 15,
-            "value": "chinese",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "show me chinese restaurants"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 8,
-            "end": 14,
-            "value": "chinese",
-            "entity": "cuisine"
-          },
-          {
-            "start": 34,
-            "end": 39,
-            "value": "north",
-            "entity": "location"
-          }
-        ],
-        "text": "show me chines restaurants in the north"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 31,
-            "end": 37,
-            "value": "centre",
-            "entity": "location"
-          },
-          {
-            "start": 10,
-            "end": 17,
-            "value": "mexican",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "show me a mexican place in the centre"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 20,
-            "end": 26,
-            "value": "indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "i am looking for an indian spot called olaolaolaolaolaola"
-      },
-      {
-        "intent": "restaurant_search",
-        "text": "search for restaurants"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 16,
-            "end": 20,
-            "value": "west",
-            "entity": "location"
-          }
-        ],
-        "text": "anywhere in the west"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 14,
-            "end": 19,
-            "value": "18328",
-            "entity": "location"
-          }
-        ],
-        "text": "anywhere near 18328"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 17,
-            "end": 29,
-            "value": "asian fusion",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "I am looking for asian fusion food"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 29,
-            "end": 34,
-            "value": "29432",
-            "entity": "location"
-          }
-        ],
-        "text": "I am looking a restaurant in 29432"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 9,
-            "value": "London",
-            "entity": "location"
-          }
-        ],
-        "text": "in London"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "South Indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "South Indian"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "North Indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "North Indian"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Italian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "Italian"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "chinese",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "Chinese"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "chinese",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "chinese"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Lithuania",
-            "entity": "location"
-          }
-        ],
-        "text": "Lithuania"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 14,
-            "end": 19,
-            "value": "Italy",
-            "entity": "location"
-          }
-        ],
-        "text": "Oh, sorry, in Italy"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "in delhi"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "Delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "In Delhi"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "Delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "In Delhi."
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 37,
-            "end": 42,
-            "value": "Delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "I am looking for some restaurants in Delhi."
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 37,
-            "end": 42,
-            "value": "Delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "I am looking for some restaurants in Delhi"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 37,
-            "end": 42,
-            "value": "delhi",
-            "entity": "location"
-          }
-        ],
-        "text": "I am looking for some restaurants in delhi"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 17,
-            "end": 38,
-            "value": "mexican indian fusion",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "I am looking for mexican indian fusion"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 24,
-            "end": 28,
-            "value": "rome",
-            "entity": "location"
-          },
-          {
-            "start": 34,
-            "end": 42,
-            "value": "mid",
-            "entity": "price"
-          },
-          {
-            "start": 60,
-            "end": 67,
-            "value": "british",
-            "entity": "cuisine"
-          },
-          {
-            "start": 77,
-            "end": 81,
-            "value": "4",
-            "entity": "people"
-          }
-        ],
-        "text": "can you book a table in rome in a moderate price range with british food for four people"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "central",
-            "entity": "location"
-          },
-          {
-            "start": 8,
-            "end": 14,
-            "value": "indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "central indian restaurant"
-      },
-      {
-        "intent": "goodbye",
-        "text": "bye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "goodbye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "good bye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "stop"
-      },
-      {
-        "intent": "goodbye",
-        "text": "end"
-      },
-      {
-        "intent": "goodbye",
-        "text": "farewell"
-      },
-      {
-        "intent": "goodbye",
-        "text": "Bye bye"
-      },
-      {
-        "intent": "goodbye",
-        "text": "have a good one"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 38,
-            "end": 42,
-            "value": "pune",
-            "entity": "location"
-          }
-        ],
-        "text": "please help me to find restaurants in pune"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 23,
-            "end": 41,
-            "value": " ankit_284@abc.com",
-            "entity": "email"
-          }
-        ],
-        "text": "please send an email to ankit_284@abc.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 21,
-            "end": 32,
-            "value": "abc@xyz.com",
-            "entity": "email"
-          }
-        ],
-        "text": "yeah send details on abc@xym.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 26,
-            "end": 37,
-            "value": "xyz@def.com",
-            "entity": "email"
-          }
-        ],
-        "text": "okie share the details on xyz@def.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 19,
-            "end": 34,
-            "value": "abc123@yahoo.uk",
-            "entity": "email"
-          }
-        ],
-        "text": "yep my email id is abc123@yahoo.uk"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 4,
-            "end": 23,
-            "value": "xyz_123@abc-def.com",
-            "entity": "email"
-          }
-        ],
-        "text": "hmm xyz_123@abc-def.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 0,
-            "end": 27,
-            "value": "abc123_def.xyz@gmail-en.com",
-            "entity": "email"
-          }
-        ],
-        "text": "abc123_def.xyz@gmail-en.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 12,
-            "end": 33,
-            "value": "abcd__123@outlook.com",
-            "entity": "email"
-          }
-        ],
-        "text": "share it on abcd__123@outlook.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 18,
-            "end": 37,
-            "value": "summet.s@upgrad.com",
-            "entity": "email"
-          }
-        ],
-        "text": "great here you go summet.s@upgrad.com"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 32,
-            "end": 44,
-            "value": "north indian",
-            "entity": "cuisine"
-          },
-          {
-            "start": 69,
-            "end": 75,
-            "value": "bombay",
-            "entity": "location"
-          },
-          {
-            "start": 79,
-            "end": 93,
-            "value": "testabc@xyz.in",
-            "entity": "email"
-          },
-          {
-            "start": 117,
-            "end": 120,
-            "value": "500",
-            "entity": "price"
-          },
-          {
-            "start": 125,
-            "end": 133,
-            "value": "2 people",
-            "entity": "people"
-          }
-        ],
-        "text": "please mail me the list of good north indian restaurants in southern bombay at testabc@xyz.in, cost should be within 500 for 2 people"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 68,
-            "end": 82,
-            "value": "test123@xyz.in",
-            "entity": "email"
-          },
-          {
-            "start": 53,
-            "end": 64,
-            "value": "north dilli",
-            "entity": "location"
-          },
-          {
-            "start": 25,
-            "end": 37,
-            "value": "south indian",
-            "entity": "cuisine"
-          },
-          {
-            "start": 106,
-            "end": 109,
-            "value": "300",
-            "entity": "price"
-          },
-          {
-            "start": 114,
-            "end": 122,
-            "value": "1 person",
-            "entity": "people"
-          }
-        ],
-        "text": "send me the list of good south indian restaurants in north dilli at test123@xyz.in, cost should be within 300 for 1 person"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 23,
-            "end": 34,
-            "value": "veg Italian",
-            "entity": "cuisine"
-          },
-          {
-            "start": 50,
-            "end": 59,
-            "value": "hyderabad",
-            "entity": "location"
-          },
-          {
-            "start": 63,
-            "end": 77,
-            "value": "testabc@xyz.in",
-            "entity": "email"
-          },
-          {
-            "start": 79,
-            "end": 93,
-            "value": "no price limit",
-            "entity": "price"
-          },
-          {
-            "start": 98,
-            "end": 106,
-            "value": "2 people",
-            "entity": "people"
-          }
-        ],
-        "text": "share the list of good veg Italian restaurants in hyderabad at testabc@xyz.in, no price limit for 2 people"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 3,
-            "end": 10,
-            "value": "madras ",
-            "entity": "location"
-          },
-          {
-            "start": 22,
-            "end": 38,
-            "value": "veg north indian",
-            "entity": "cuisine"
-          },
-          {
-            "start": 54,
-            "end": 62,
-            "value": "3 people",
-            "entity": "people"
-          }
-        ],
-        "text": "in madras get me good veg north indian restaurant for 3 people"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 5,
-            "end": 13,
-            "value": "mexican ",
-            "entity": "cuisine"
-          },
-          {
-            "start": 27,
-            "end": 33,
-            "value": "Poona ",
-            "entity": "location"
-          },
-          {
-            "start": 37,
-            "end": 45,
-            "value": "2 people",
-            "entity": "people"
-          },
-          {
-            "start": 66,
-            "end": 77,
-            "value": "y2k@abc.com",
-            "entity": "email"
-          }
-        ],
-        "text": "good mexican restaurant in Poona for 2 people, mail me details at y2k@abc.com"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 8,
-            "end": 17,
-            "value": "American ",
-            "entity": "cuisine"
-          },
-          {
-            "start": 31,
-            "end": 38,
-            "value": "Bhilai ",
-            "entity": "location"
-          },
-          {
-            "start": 42,
-            "end": 50,
-            "value": "3 people",
-            "entity": "people"
-          },
-          {
-            "start": 58,
-            "end": 61,
-            "value": "700",
-            "entity": "price"
-          },
-          {
-            "start": 82,
-            "end": 93,
-            "value": "y2k@abc.com",
-            "entity": "email"
-          }
-        ],
-        "text": "awesome American restaurant in Bhilai for 3 people within 700, mail me details at y2k@abc.com"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 14,
-            "end": 22,
-            "value": "chinese ",
-            "entity": "cuisine"
-          },
-          {
-            "start": 31,
-            "end": 39,
-            "value": "kolkata ",
-            "entity": "location"
-          },
-          {
-            "start": 43,
-            "end": 51,
-            "value": "2 people",
-            "entity": "people"
-          },
-          {
-            "start": 67,
-            "end": 70,
-            "value": "600",
-            "entity": "price"
-          },
-          {
-            "start": 82,
-            "end": 97,
-            "value": "how2why@xyz.com",
-            "entity": "email"
-          }
-        ],
-        "text": "happening veg chinese hotel in kolkata for 2 people, budget around 600, text me @ how2why@xyz.com"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 11,
-            "end": 20,
-            "value": "american ",
-            "entity": "cuisine"
-          },
-          {
-            "start": 34,
-            "end": 40,
-            "value": "Poona ",
-            "entity": "location"
-          },
-          {
-            "start": 44,
-            "end": 52,
-            "value": "3 people",
-            "entity": "people"
-          },
-          {
-            "start": 73,
-            "end": 84,
-            "value": "y2k@abc.com",
-            "entity": "email"
-          },
-          {
-            "start": 92,
-            "end": 96,
-            "value": "2000",
-            "entity": "price"
-          }
-        ],
-        "text": "high class american restaurant in Poona for 3 people, mail me details at y2k@abc.com budget 2000"
-      },
-      {
-        "intent": "goodbye",
-        "text": "thanks bot"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 4,
-            "end": 12,
-            "value": "3 people",
-            "entity": "people"
-          }
-        ],
-        "text": "for 3 people"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 22,
-            "end": 28,
-            "value": "2 guys",
-            "entity": "people"
-          }
-        ],
-        "text": "share the details for 2 guys"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 20,
-            "end": 26,
-            "value": "2 gals",
-            "entity": "people"
-          }
-        ],
-        "text": "get the details for 2 gals"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 4,
-            "end": 9,
-            "value": "2 men",
-            "entity": "people"
-          }
-        ],
-        "text": "for 2 men get the details"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 12,
-            "end": 20,
-            "value": "American",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "looking for American food"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 5,
-            "end": 13,
-            "value": "itialian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "good itialian stuff"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 10,
-            "end": 22,
-            "value": "north indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "exquisite north indian buffet"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 15,
-            "end": 19,
-            "value": "Thai",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "mouth watering Thai ala carte"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 10,
-            "end": 22,
-            "value": "south indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "delicious south indian food"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 6,
-            "end": 18,
-            "value": "north indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "tasty north indian sweets shop"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 17,
-            "end": 24,
-            "value": "italian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "looking for good italian pasta"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Mexican",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "Mexican delicacies"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 5,
-            "end": 13,
-            "value": "American",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "good American breakfast"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 6,
-            "end": 13,
-            "value": "Italian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "great Italian food"
-      },
-      {
-        "intent": "restaurant_search",
-        "entities": [
-          {
-            "start": 12,
-            "end": 24,
-            "value": "South Indian",
-            "entity": "cuisine"
-          }
-        ],
-        "text": "looking for South Indian sweets"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 21,
-            "end": 41,
-            "value": "test1234_xyz@abc.com",
-            "entity": "email"
-          }
-        ],
-        "text": "share the details on test1234_xyz@abc.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 3,
-            "end": 19,
-            "value": "test9876@abc.com",
-            "entity": "email"
-          }
-        ],
-        "text": "on test9876@abc.com share the restaurants"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 26,
-            "end": 40,
-            "value": "haahaa@haa.com",
-            "entity": "email"
-          }
-        ],
-        "text": "great mail me the list on haahaa@haa.com"
-      },
-      {
-        "intent": "send_email",
-        "entities": [
-          {
-            "start": 16,
-            "end": 31,
-            "value": "yahoo@gmail.com",
-            "entity": "email"
-          }
-        ],
-        "text": "yeah mail me on yahoo@gmail.com"
-      },
-      {
-        "intent": "goodbye",
-        "text": "thanks dude"
-      },
-      {
-        "intent": "goodbye",
-        "text": "your welcome "
-      },
-      {
-        "intent": "goodbye",
-        "text": "bon apetite"
-      },
-      {
-        "intent": "goodbye",
-        "text": "great bot thanks"
-      },
-      {
-        "intent": "affirm",
-        "text": "yupeee"
-      },
-      {
-        "intent": "affirm",
-        "text": "yess"
-      },
-      {
-        "intent": "greet",
-        "text": "hey dude"
-      },
-      {
-        "intent": "greet",
-        "text": "hello madam"
-      },
-      {
-        "intent": "greet",
-        "text": "hi, bot"
-      },
-      {
-        "intent": "goodbye",
-        "text": "cya"
-      }
-    ],
     "regex_features": [
       {
-        "name": "email",
-        "pattern": "[a-zA-Z]{1}(\\w|\\.|\\+|-)*@[a-zA-Z]{1}(\\w|-)*\\.[\\w]{2,}"
-      },
-      {
-        "name": "greet",
-        "pattern": "hey[^\\s]*"
+        "name": "zipcode",
+        "pattern": "[0-9]{6}"
       },
       {
         "name": "price",
         "pattern": "[0-9]{3,5}"
       },
       {
-        "name": "zipcode",
-        "pattern": "[0-9]{6}"
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      },
+      {
+        "name": "email",
+        "pattern": "[a-zA-Z]{1}(\\w|\\.|\\+|-)*@[a-zA-Z]{1}(\\w|-)*\\.[\\w]{2,}"
       }
     ],
     "entity_synonyms": [
@@ -1215,7 +67,8 @@
         "value": "south indian",
         "synonyms": [
           "South Indian",
-          "south Indian"
+          "south Indian",
+          "South Indian"
         ]
       },
       {
@@ -1306,6 +159,1429 @@
           "warangal",
           "Kazipet",
           "kazipet"
+        ]
+      }
+    ],
+    "lookup_table": [
+      {
+        "name": "location",
+        "elements": "./lookup/locations.txt"
+      },
+      {
+        "name": "budget",
+        "elements": [
+          "<300",
+          "300-700",
+          ">700"
+        ]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "halo",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good noon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "okay",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "okie",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I want to grab lunch",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am searching for a dinner spot",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a place in the north of town",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "north",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me chinese restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "show me chines restaurants in the north",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "north",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me a mexican place in the centre",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "centre",
+            "entity": "location"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for an indian spot called olaolaolaolaolaola",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "search for restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "anywhere in the west",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "west",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "anywhere near 18328",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "18328",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for asian fusion food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "asian fusion",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I am looking a restaurant in 29432",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "29432",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "in London",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "London",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "South Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "North Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "North Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Italian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Lithuania",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Lithuania",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Oh, sorry, in Italy",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Italy",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "in delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "In Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "In Delhi.",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for some restaurants in Delhi.",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for some restaurants in Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for some restaurants in delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for mexican indian fusion",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 38,
+            "value": "mexican indian fusion",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "can you book a table in rome in a moderate price range with british food for four people",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "rome",
+            "entity": "location"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "mid",
+            "entity": "price"
+          },
+          {
+            "start": 60,
+            "end": 67,
+            "value": "british",
+            "entity": "cuisine"
+          },
+          {
+            "start": 77,
+            "end": 81,
+            "value": "4",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "central indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "central",
+            "entity": "location"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "please help me to find restaurants in pune",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 38,
+            "end": 42,
+            "value": "pune",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "please send an email to ankit_284@abc.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": " ankit_284@abc.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yeah send details on abc@xym.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "abc@xyz.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "okie share the details on xyz@def.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "xyz@def.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yep my email id is abc123@yahoo.uk",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 19,
+            "end": 34,
+            "value": "abc123@yahoo.uk",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "hmm xyz_123@abc-def.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 4,
+            "end": 23,
+            "value": "xyz_123@abc-def.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "abc123_def.xyz@gmail-en.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 0,
+            "end": 27,
+            "value": "abc123_def.xyz@gmail-en.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "share it on abcd__123@outlook.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 12,
+            "end": 33,
+            "value": "abcd__123@outlook.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "great here you go summet.s@upgrad.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 18,
+            "end": 37,
+            "value": "summet.s@upgrad.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "please mail me the list of good north indian restaurants in southern bombay at testabc@xyz.in, cost should be within 500 for 2 people",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 32,
+            "end": 44,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 69,
+            "end": 75,
+            "value": "bombay",
+            "entity": "location"
+          },
+          {
+            "start": 79,
+            "end": 93,
+            "value": "testabc@xyz.in",
+            "entity": "email"
+          },
+          {
+            "start": 117,
+            "end": 120,
+            "value": "500",
+            "entity": "price"
+          },
+          {
+            "start": 125,
+            "end": 133,
+            "value": "2 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "send me the list of good south indian restaurants in north dilli at test123@xyz.in, cost should be within 300 for 1 person",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 68,
+            "end": 82,
+            "value": "test123@xyz.in",
+            "entity": "email"
+          },
+          {
+            "start": 53,
+            "end": 64,
+            "value": "north dilli",
+            "entity": "location"
+          },
+          {
+            "start": 25,
+            "end": 37,
+            "value": "south indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 106,
+            "end": 109,
+            "value": "300",
+            "entity": "price"
+          },
+          {
+            "start": 114,
+            "end": 122,
+            "value": "1 person",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "share the list of good veg Italian restaurants in hyderabad at testabc@xyz.in, no price limit for 2 people",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "veg Italian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 50,
+            "end": 59,
+            "value": "hyderabad",
+            "entity": "location"
+          },
+          {
+            "start": 63,
+            "end": 77,
+            "value": "testabc@xyz.in",
+            "entity": "email"
+          },
+          {
+            "start": 79,
+            "end": 93,
+            "value": "no price limit",
+            "entity": "price"
+          },
+          {
+            "start": 98,
+            "end": 106,
+            "value": "2 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "in madras get me good veg north indian restaurant for 3 people",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "madras ",
+            "entity": "location"
+          },
+          {
+            "start": 22,
+            "end": 38,
+            "value": "veg north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 54,
+            "end": 62,
+            "value": "3 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "good mexican restaurant in Poona for 2 people, mail me details at y2k@abc.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "mexican ",
+            "entity": "cuisine"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "Poona ",
+            "entity": "location"
+          },
+          {
+            "start": 37,
+            "end": 45,
+            "value": "2 people",
+            "entity": "people"
+          },
+          {
+            "start": 66,
+            "end": 77,
+            "value": "y2k@abc.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "awesome American restaurant in Bhilai for 3 people within 700, mail me details at y2k@abc.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 17,
+            "value": "American ",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 38,
+            "value": "Bhilai ",
+            "entity": "location"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "value": "3 people",
+            "entity": "people"
+          },
+          {
+            "start": 58,
+            "end": 61,
+            "value": "700",
+            "entity": "price"
+          },
+          {
+            "start": 82,
+            "end": 93,
+            "value": "y2k@abc.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "happening veg chinese hotel in kolkata for 2 people, budget around 600, text me @ how2why@xyz.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "chinese ",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 39,
+            "value": "kolkata ",
+            "entity": "location"
+          },
+          {
+            "start": 43,
+            "end": 51,
+            "value": "2 people",
+            "entity": "people"
+          },
+          {
+            "start": 67,
+            "end": 70,
+            "value": "600",
+            "entity": "price"
+          },
+          {
+            "start": 82,
+            "end": 97,
+            "value": "how2why@xyz.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "high class american restaurant in Poona for 3 people, mail me details at y2k@abc.com budget 2000",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "american ",
+            "entity": "cuisine"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "Poona ",
+            "entity": "location"
+          },
+          {
+            "start": 44,
+            "end": 52,
+            "value": "3 people",
+            "entity": "people"
+          },
+          {
+            "start": 73,
+            "end": 84,
+            "value": "y2k@abc.com",
+            "entity": "email"
+          },
+          {
+            "start": 92,
+            "end": 96,
+            "value": "2000",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "thanks bot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "for 3 people",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "3 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "share the details for 2 guys",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "2 guys",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "get the details for 2 gals",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "2 gals",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "for 2 men get the details",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 9,
+            "value": "2 men",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "looking for American food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "good itialian stuff",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "itialian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "exquisite north indian buffet",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "mouth watering Thai ala carte",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "Thai",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "delicious south indian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "tasty north indian sweets shop",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for good italian pasta",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Mexican delicacies",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "good American breakfast",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "great Italian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "looking for South Indian sweets",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "share the details on test1234_xyz@abc.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 21,
+            "end": 41,
+            "value": "test1234_xyz@abc.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "on test9876@abc.com share the restaurants",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 3,
+            "end": 19,
+            "value": "test9876@abc.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "great mail me the list on haahaa@haa.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 26,
+            "end": 40,
+            "value": "haahaa@haa.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yeah mail me on yahoo@gmail.com",
+        "intent": "send_email",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "yahoo@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "thanks dude",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "your welcome ",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "bon apetite",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "great bot thanks",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "yupeee",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yess",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "hey dude",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello madam",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi, bot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "cya",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nope ",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "naah ",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "not needed",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but no need to send an email",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but email not needed",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but mail not required",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "what is the budget you are looking ?",
+        "intent": "budget",
+        "entities": []
+      },
+      {
+        "text": "in what location",
+        "intent": "location",
+        "entities": []
+      },
+      {
+        "text": "may I know the budget for 2 people",
+        "intent": "budget",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "2 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "please tell the budget for 3 people",
+        "intent": "budget",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "3 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "looking for restaurant in Hyderabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Chines",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Chines",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Italian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "North Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "North Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "South Indian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "South Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "American",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "mexican",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "mex",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "mex",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "in hyderabad",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Delhi",
+        "intent": "location",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "looking for good restaurant in Bhilai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "Bhilai",
+            "entity": "location"
+          }
         ]
       }
     ]
