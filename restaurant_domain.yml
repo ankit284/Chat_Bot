@@ -25,8 +25,7 @@ intents:
  - greet
  - affirm
  - deny
- - goodbye
- - thankyou
+ - goodbyes
  - restaurant_search
  - send_email
  - budget
@@ -41,6 +40,16 @@ templates:
     - "goodbye :)"
     - "Bye-bye"
     - "Bon - Apetite"
+  utter_affirm:
+    - "ok"
+    - "okay"
+    - "okie"
+    - "yeah"
+    - "yes"
+  utter_deny:
+    - "no"
+    - "nope"
+    - "nah"  
   utter_default:
     - "Hello"
   utter_ask_cuisine: 

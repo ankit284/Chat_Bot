@@ -1370,6 +1370,87 @@
         "text": "cya",
         "intent": "goodbye",
         "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nope ",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "naah ",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "not needed",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but no need to send an email",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but email not needed",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thanks but mail not required",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "what is the budget you are looking ?",
+        "intent": "budget",
+        "entities": []
+      },
+      {
+        "text": "in what location",
+        "intent": "location",
+        "entities": []
+      },
+      {
+        "text": "may I know the budget for 2 people",
+        "intent": "budget",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "2 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "please tell the budget for 3 people",
+        "intent": "budget",
+        "entities": [
+          {
+            "start": 27,
+            "end": 35,
+            "value": "3 people",
+            "entity": "people"
+          }
+        ]
+      },
+      {
+        "text": "looking for restaurant in Hyderabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }
