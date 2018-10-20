@@ -151,3 +151,21 @@
     - slot{"budget": "300"}
     - action_restaurant
     - export
+
+## Generated Story 600278197254133861
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "raebareli"}
+    - slot{"location": "raebareli"}
+    - utter_ask_cuisine
+* restaurant_search
+    - utter_ask_budget
+* restaurant_search{"budget": "300"}
+    - slot{"budget": "300"}
+    - action_restaurant
+    - slot{"location": "raebareli"}
+    - action_restaurant
+    - slot{"location": "raebareli"}
+    - export

@@ -58,7 +58,7 @@ class ActionSendEmail(Action):
 
 class ActionValidateCuisine(Action):
         def name(self):
-                return 'action_send_email'
+                return 'action_validate_cuisine'
 
         def run(self, dispatcher, tracker, domain):
                 dispatcher.utter_message("-----")
@@ -66,7 +66,7 @@ class ActionValidateCuisine(Action):
 
 class ActionValidateLocation(Action):
         def name(self):
-                return 'action_send_email'
+                return 'action_validate_location'
 
         def run(self, dispatcher, tracker, domain):
                 dispatcher.utter_message("-----")

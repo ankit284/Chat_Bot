@@ -82,7 +82,7 @@ templates:
         payload: ">700"
   utter_ask_send_email:
     - text: "Provide email on which to send restaurants list"
-  utter_ask_reenter_cuisine
+  utter_ask_reenter_cuisine:
     - text: "Provide one of the only mentioned cuisines"
   utter_ask_reenter_location:
     - text: "We don't operate in this location, please provide another location"
