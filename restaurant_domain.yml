@@ -46,7 +46,10 @@ templates:
     - "nope"
     - "nah"  
   utter_default:
-    - "Hello"
+    - "Sorry I didn't follow that!"
+    - "I didn't get that!"
+  utter_noService:
+    - "Sorry! We do not operate in that area yet"
   utter_ask_cuisine: 
     - text: "what kind of cuisine would you like?"
       buttons:
@@ -67,7 +70,7 @@ templates:
   utter_ask_location:
     - "In what location?"
   utter_ask_budget:
-    - text: "What is your budget"	
+    - text: "What is your budget"
       buttons:
       - title: "Less then 300"
         payload: "<300"

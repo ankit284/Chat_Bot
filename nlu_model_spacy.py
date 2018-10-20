@@ -21,6 +21,11 @@ def train_nlu(config_data):
 def run_nlu(config_data):
         interpreter = Interpreter.load(config_data["path"]+'/default/restaurantnlu', builder)
         print(interpreter.parse("can you please suggest food"))
+        print(interpreter.parse("hello"))
+        print(interpreter.parse("restaurants"))
+        print(interpreter.parse("hello! get me restaurants"))
+        print(interpreter.parse("i need food"))
+        print(interpreter.parse("lets have some lunch"))
 
 if __name__ == '__main__':
 	train_nlu(config_data)

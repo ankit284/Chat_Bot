@@ -60,7 +60,10 @@
         "synonyms": [
           "North Indian",
           "north Indian",
-          "North indian"
+          "North indian",
+          "north",
+          "Northindian",
+          "north-indian"
         ]
       },
       {
@@ -68,7 +71,10 @@
         "synonyms": [
           "South Indian",
           "south Indian",
-          "South Indian"
+          "South Indian",
+          "south-indian",
+          "south-Indian",
+          "southindian"
         ]
       },
       {
@@ -1497,6 +1503,105 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "book north indian restaurant for 4 people in raebareli",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "value": "raebareli",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "get mexican eateries",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "mexican ",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "get eat joints",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "veg food at bhopal",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "bhopal",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "veg lunch at mall",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "munching zone",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "something to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "something to eat in gachibowli",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "gachibowli",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "something to munch",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "wana dine",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "feeling hungry",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "order and collect",
+        "intent": "restaurant_search",
+        "entities": []
       }
     ]
   }
