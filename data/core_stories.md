@@ -120,8 +120,8 @@
     - action_restaurant
     - slot{"location": "hyderabad"}
     - utter_ask_send_email
-* send_email{"email": "jpr.saurabh@gmail.com"}
-    - slot{"email": "jpr.saurabh@gmail.com"}
+* send_email{"email": "test@testmail.com"}
+    - slot{"email": "test@testmail.com"}
 * goodbye
     - utter_goodbye
     - export
@@ -186,10 +186,10 @@
     - utter_get_email_confirmation
 * affirm
     - utter_ask_send_email
-* send_email{"email": "jpr.saurabh@gmail.com"}
-    - slot{"email": "jpr.saurabh@gmail.com"}
+* send_email{"email": "test@testmail.com"}
+    - slot{"email": "test@testmail.com"}
     - action_send_email
-    - slot{"email": "jpr.saurabh@gmail.com"}
+    - slot{"email": "test@testmail.com"}
     - utter_goodbye
     - export
 
@@ -210,9 +210,9 @@
     - utter_get_email_confirmation
 * affirm
     - utter_ask_send_email
-* send_email{"email": "jpr.saurabh@gmail.com"}
-    - slot{"email": "jpr.saurabh@gmail.com"}
+* send_email{"email": "test@testmail.com"}
+    - slot{"email": "test@testmail.com"}
     - action_send_email
-    - slot{"email": "jpr.saurabh@gmail.com"}
+    - slot{"email": "test@testmail.com"}
     - utter_goodbye
     - export
