@@ -225,7 +225,8 @@ class Zomato:
         if str(limit).isalpha() == True:
             raise ValueError('LimitNotInteger')
         headers = {'Accept': 'application/json', 'user-key': self.user_key}
-        r = (requests.get(base_url + "search?q=" + str(query) + "&count=" + str(limit) + "&lat=" + str(latitude) + "&lon=" + str(longitude) + "&cuisines=" + str(cuisines), headers=headers).content).decode("utf-8")
+        r = (requests.get(base_url + "search?q=" + str(query) + "&count=" + str(limit) + "&lat=" + str(latitude) + "&lon=" + str(longitude) + "&cuisines=" + str(cuisines)+'&sort=rating&order=desc', headers=headers).content).decode("utf-8")
+        # https://developers.zomato.com/api/v2.1/search?entity_id=7013&entity_type=city&count=10&lat=17.442193&lon=78.354478&radius=5&cuisines=South%20Indian&sort=rating&order=desc
         return r#a = ast.literal_eval(r)
 
 

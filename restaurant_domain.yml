@@ -8,6 +8,16 @@ slots:
   budget:
     type: float
     min_value: 0
+  lat:
+    type: float
+  lon:
+    type: float
+  city_id:
+    type: text
+  cuisine_key:
+    type: text
+  api_response:
+    type: unfeaturized
 
 entities:
 - location
@@ -53,7 +63,7 @@ templates:
   utter_noService:
     - "Sorry! We do not operate in that area yet"
   utter_ask_cuisine: 
-    - text: "what kind of cuisine would you like?"
+    - text: "What kind of cuisine would you like?"
       buttons:
       - title: "Chinese"
         payload: "Chinese"
@@ -68,7 +78,7 @@ templates:
       - title: "Mexican"
         payload: "Mexican"
   utter_ask_howcanhelp:
-    - "how can I help you?"
+    - "How can I help you?"
   utter_ask_location:
     - "In what location?"
   utter_ask_budget:
@@ -80,8 +90,19 @@ templates:
         payload: "300 - 700"
       - title: "More than 700"
         payload: ">700"
+  utter_get_email_confirmation:
+      - text: "May I send top 10 restaurant list to your email?"
+        buttons:
+        - title: "Yes"
+          payload: "yes"
+        - title: "No"
+          payload: "No"
   utter_ask_send_email:
-    - text: "Provide email on which to send restaurants list"
+    - text: "Please provide an email id!"
+  utter_email_not_sent:
+    - "Sorry! I am currently unable to send mail to {email}"
+  utter_email_sent:
+    - "Email successfuly sent at {email}"
   utter_ask_reenter_cuisine:
     - text: "Provide one of the only mentioned cuisines"
   utter_ask_reenter_location:
@@ -98,6 +119,7 @@ actions:
 - utter_ask_cuisine
 - utter_ask_budget
 - utter_ask_send_email
+- utter_get_email_confirmation
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
 - actions.ActionValidateCuisine
