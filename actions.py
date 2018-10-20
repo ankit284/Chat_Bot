@@ -56,3 +56,19 @@ class ActionSendEmail(Action):
                 dispatcher.utter_message("-----")
                 return [SlotSet('email','xyz@abc.com')]
 
+class ActionValidateCuisine(Action):
+        def name(self):
+                return 'action_send_email'
+
+        def run(self, dispatcher, tracker, domain):
+                dispatcher.utter_message("-----")
+                return [SlotSet('cuisine','Italian')]
+
+class ActionValidateLocation(Action):
+        def name(self):
+                return 'action_send_email'
+
+        def run(self, dispatcher, tracker, domain):
+                dispatcher.utter_message("-----")
+                return [SlotSet('location','Hyderabad')]
+

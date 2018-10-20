@@ -25,6 +25,8 @@ intents:
  - budget
  - location
  - cuisine
+ - reenter_cuisine
+ - reenter_location
 
 templates:
   utter_greet:
@@ -80,6 +82,10 @@ templates:
         payload: ">700"
   utter_ask_send_email:
     - text: "Provide email on which to send restaurants list"
+  utter_ask_reenter_cuisine
+    - text: "Provide one of the only mentioned cuisines"
+  utter_ask_reenter_location:
+    - text: "We don't operate in this location, please provide another location"
 
 actions:
 - utter_greet
@@ -94,3 +100,5 @@ actions:
 - utter_ask_send_email
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
+- actions.ActionValidateCuisine
+- actions.ActionValidateLocation
