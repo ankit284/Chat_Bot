@@ -16,7 +16,7 @@ class ActionSearchRestaurants(Action):
                 return 'action_restaurant'
         
         def run(self, dispatcher, tracker, domain):
-                config={ "user_key":"6ce88a5ec1419e335afa1c7f92f4b739"}
+                config={ "user_key":""}
                 zomato = zomatopy.initialize_app(config)
                 if self.country_lookuplist==[]:
                         with open('./data/lookup/locations.txt','r') as lookup:
