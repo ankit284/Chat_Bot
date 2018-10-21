@@ -9,14 +9,20 @@
     "intent_budget",
     "intent_location",
     "intent_cuisine",
+    "intent_reenter_cuisine",
+    "intent_reenter_location",
     "entity_location",
     "entity_cuisine",
     "entity_email",
     "entity_budget",
     "slot_budget_0",
+    "slot_city_id_0",
     "slot_cuisine_0",
+    "slot_cuisine_key_0",
     "slot_email_0",
+    "slot_lat_0",
     "slot_location_0",
+    "slot_lon_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
@@ -30,7 +36,10 @@
     "prev_utter_ask_cuisine",
     "prev_utter_ask_budget",
     "prev_utter_ask_send_email",
+    "prev_utter_get_email_confirmation",
     "prev_action_restaurant",
-    "prev_action_send_email"
+    "prev_action_send_email",
+    "prev_action_validate_cuisine",
+    "prev_action_validate_location"
   ]
 }

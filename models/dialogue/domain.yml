@@ -10,8 +10,11 @@ action_names:
 - utter_ask_cuisine
 - utter_ask_budget
 - utter_ask_send_email
+- utter_get_email_confirmation
 - action_restaurant
 - action_send_email
+- action_validate_cuisine
+- action_validate_location
 actions:
 - utter_greet
 - utter_goodbye
@@ -23,8 +26,11 @@ actions:
 - utter_ask_cuisine
 - utter_ask_budget
 - utter_ask_send_email
+- utter_get_email_confirmation
 - actions.ActionSearchRestaurants
 - actions.ActionSendEmail
+- actions.ActionValidateCuisine
+- actions.ActionValidateLocation
 config:
   store_entities_as_slots: true
 entities:
@@ -42,21 +48,42 @@ intents:
 - budget
 - location
 - cuisine
+- reenter_cuisine
+- reenter_location
 slots:
+  api_response:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   budget:
     initial_value: null
     max_value: 1.0
     min_value: 0
     type: rasa_core.slots.FloatSlot
+  city_id:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   cuisine:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  cuisine_key:
     initial_value: null
     type: rasa_core.slots.TextSlot
   email:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  lat:
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
   location:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  lon:
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
 templates:
   utter_affirm:
   - text: ok
@@ -87,19 +114,35 @@ templates:
       title: American
     - payload: Mexican
       title: Mexican
-    text: what kind of cuisine would you like?
+    text: What kind of cuisine would you like?
   utter_ask_howcanhelp:
-  - text: how can I help you?
+  - text: How can I help you?
   utter_ask_location:
   - text: In what location?
+  utter_ask_reenter_cuisine:
+  - text: Provide one of the only mentioned cuisines
+  utter_ask_reenter_location:
+  - text: We don't operate in this location, please provide another location
   utter_ask_send_email:
-  - text: Provide email on which to send restaurants list
+  - text: Please provide an email id!
   utter_default:
-  - text: Hello
+  - text: Sorry I didn't follow that!
+  - text: I didn't get that!
   utter_deny:
   - text: no
   - text: nope
   - text: nah
+  utter_email_not_sent:
+  - text: Sorry! I am currently unable to send mail to {email}
+  utter_email_sent:
+  - text: Email successfuly sent at {email}
+  utter_get_email_confirmation:
+  - buttons:
+    - payload: yes
+      title: Yes
+    - payload: No
+      title: No
+    text: May I send top 10 restaurant list to your email?
   utter_goodbye:
   - text: goodbye :)
   - text: Bye-bye
@@ -108,3 +151,5 @@ templates:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
+  utter_noService:
+  - text: Sorry! We do not operate in that area yet

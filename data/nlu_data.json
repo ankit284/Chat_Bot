@@ -1602,6 +1602,102 @@
         "text": "order and collect",
         "intent": "restaurant_search",
         "entities": []
+      },
+      {
+        "text": "Under 500 I am looking for Mexican food in Hyderabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "500",
+            "entity": "budget"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "value": "Mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "`Within 700 I am looking for American food at Kolkata",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "700",
+            "entity": "budget"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "American",
+            "entity": "cuisine"
+          },
+          {
+            "start": 46,
+            "end": 53,
+            "value": "Kolkata",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "at Bhilai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Bhilai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "at Hyderabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Budget around 700 looking out options of South Indian food in Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "700",
+            "entity": "budget"
+          },
+          {
+            "start": 41,
+            "end": 53,
+            "value": "South Indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 62,
+            "end": 67,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }

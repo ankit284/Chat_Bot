@@ -3,14 +3,24 @@
     "action_listen": {
       "slots": [
         "budget",
-        "email",
         "location",
+        "email",
         "cuisine"
       ]
     },
-    "action_restaurant": {
+    "action_validate_location": {
       "slots": [
         "location"
+      ]
+    },
+    "action_validate_cuisine": {
+      "slots": [
+        "cuisine"
+      ]
+    },
+    "action_send_email": {
+      "slots": [
+        "email"
       ]
     },
     "utter_goodbye": {

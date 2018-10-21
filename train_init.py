@@ -9,7 +9,7 @@ import logging
 if __name__ == '__main__':
     logging.basicConfig(level='INFO')
 
-    training_data_file = './data/core_stories.md'
+    training_data_file = './data/ankit_stories.md'
     model_path = './models/dialogue'
     # fallback = FallbackPolicy(fallback_action_name="action_default_fallback", core_threshold=0.001,nlu_threshold=0.001)
     
