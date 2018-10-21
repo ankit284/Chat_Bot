@@ -1266,6 +1266,192 @@
           }
         ],
         "text": "i am hungry, looking out for good Mexican restaurant in Amritsar"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 17,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "value": "raebareli",
+            "entity": "location"
+          }
+        ],
+        "text": "book north indian restaurant for 4 people in raebareli"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "restaurant"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "mexican ",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "get mexican eateries"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "get eat joints"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "bhopal",
+            "entity": "location"
+          }
+        ],
+        "text": "veg food at bhopal"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "veg lunch at mall"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "munching zone"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "something to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "gachibowli",
+            "entity": "location"
+          }
+        ],
+        "text": "something to eat in gachibowli"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "something to munch"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "wana dine"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "feeling hungry"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "order and collect"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "500",
+            "entity": "budget"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "value": "Mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "Under 500 I am looking for Mexican food in Hyderabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "700",
+            "entity": "budget"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "value": "American",
+            "entity": "cuisine"
+          },
+          {
+            "start": 46,
+            "end": 53,
+            "value": "Kolkata",
+            "entity": "location"
+          }
+        ],
+        "text": "`Within 700 I am looking for American food at Kolkata"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "Bhilai",
+            "entity": "location"
+          }
+        ],
+        "text": "at Bhilai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "Hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "at Hyderabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "700",
+            "entity": "budget"
+          },
+          {
+            "start": 41,
+            "end": 53,
+            "value": "South Indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 62,
+            "end": 67,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "Budget around 700 looking out options of South Indian food in Delhi"
       }
     ],
     "regex_features": [
@@ -1328,14 +1514,20 @@
         "synonyms": [
           "North Indian",
           "north Indian",
-          "North indian"
+          "North indian",
+          "north",
+          "Northindian",
+          "north-indian"
         ]
       },
       {
         "value": "south indian",
         "synonyms": [
           "South Indian",
-          "south Indian"
+          "south Indian",
+          "south-indian",
+          "south-Indian",
+          "southindian"
         ]
       },
       {
