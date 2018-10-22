@@ -1698,6 +1698,300 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "dining out options for Americano food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "Americano",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "american food team party in Calcutta ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": "Calcutta",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "some good italia food in Amedabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "Amedabad",
+            "entity": "location"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "value": "italia",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "awesome northindian food in bombay",
+        "intent": "",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "bombay",
+            "entity": "location"
+          },
+          {
+            "start": 8,
+            "end": 19,
+            "value": "northindian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "interested in north-indian food in New Delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "north-indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "New Delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "luncheon treat of north food in madras",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 32,
+            "end": 38,
+            "value": "madras",
+            "entity": "location"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "north food",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "good south-indian food in madrasta",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "madrasta",
+            "entity": "location"
+          },
+          {
+            "start": 5,
+            "end": 17,
+            "value": "south-indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "southindian food treat in Chennai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "southindian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "Chennai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "good mex food in Dilli",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "mex",
+            "entity": "cuisine"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "Dilli",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "good italian food in haidrabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "haidrabad",
+            "entity": "location"
+          },
+          {
+            "start": 5,
+            "end": 12,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "in Pune",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "Pune",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "at Puna",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "Puna",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "In Poona looking for good american food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "Poona",
+            "entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "awesome south food in Kazipet",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "Kazipet",
+            "entity": "location"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "value": "south",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "luncheon treat of italian food at Warangal",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "italian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "Warangal",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "under 700 at Durg looking for North Indian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "700",
+            "entity": "budget"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "value": "Durg",
+            "entity": "location"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "North Indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Italiano restaurant in Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Italiano",
+            "entity": "cuisine"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Mumbai",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }
