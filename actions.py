@@ -26,9 +26,18 @@ class ActionSearchRestaurants(Action):
                 city_lookuplist=[]
                 loc = tracker.get_slot('location')
                 cuisine = tracker.get_slot('cuisine')
+                
+                if cuisine == None:
+                        dispatcher.utter_template('utter_ask_reenter_cuisine', tracker)
+                        return 
+
+                if loc == None:
+                        dispatcher.utter_template('utter_ask_reenter_location', tracker)
+                        return
+
                 # loc="Hyderabad"
                 # cuisine="Chinese"
-                        # getting location id
+                # getting location id
                 location_detail=zomato.get_location(loc, 1)                
                 d1 = json.loads(location_detail)
                         

@@ -29,7 +29,7 @@ intents:
  - greet
  - affirm
  - deny
- - goodbyes
+ - goodbye
  - restaurant_search
  - send_email
  - budget

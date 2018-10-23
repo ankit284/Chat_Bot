@@ -840,3 +840,59 @@
     - utter_goodbye
     - export
 
+## Generated Story 3435432227545728728
+* greet
+    - utter_greet
+* restaurant_search{"budget": "500", "cuisine": "italian", "location": "bangalore"}
+    - slot{"budget": "500"}
+    - slot{"cuisine": "italian"}
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - utter_get_email_confirmation
+* affirm
+    - utter_ask_send_email
+* send_email{"email": "hmmm@hmmm.com"}
+    - slot{"email": "hmmm@hmmm.com"}
+    - action_send_email
+    - slot{"email": "hmmm@hmmm.com"}
+    - utter_goodbye
+    - export
+
+## Generated Story -7960659152567406021
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "american", "budget": "700"}
+    - slot{"budget": "700"}
+    - slot{"cuisine": "american"}
+    - action_validate_location
+    - slot{"location": null}
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - action_restaurant
+    - utter_get_email_confirmation
+* restaurant_search
+    - utter_ask_send_email
+* send_email{"email": "abcd@xyz.com"}
+    - slot{"email": "abcd@xyz.com"}
+    - action_send_email
+    - slot{"email": "abcd@xyz.com"}
+    - utter_goodbye
+    - export
+
+## Generated Story -8747805506708071442
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "north indian", "location": "delhi", "budget": "300"}
+    - slot{"budget": "300"}
+    - slot{"cuisine": "north indian"}
+    - slot{"location": "delhi"}
+    - action_validate_location
+    - slot{"location": "delhi"}
+    - action_validate_cuisine
+    - slot{"cuisine": "north indian"}
+    - action_restaurant
+    - utter_get_email_confirmation
+* deny
+    - utter_goodbye
+    - export
+

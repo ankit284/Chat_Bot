@@ -3,7 +3,7 @@
     "intent_greet",
     "intent_affirm",
     "intent_deny",
-    "intent_goodbyes",
+    "intent_goodbye",
     "intent_restaurant_search",
     "intent_send_email",
     "intent_budget",

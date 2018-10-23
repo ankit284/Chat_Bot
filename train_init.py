@@ -13,9 +13,9 @@ if __name__ == '__main__':
     model_path = './models/dialogue'
     # fallback = FallbackPolicy(fallback_action_name="action_default_fallback", core_threshold=0.001,nlu_threshold=0.001)
     
-    featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=5)
+    featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=100)
 
-    agent = Agent('./restaurant_domain.yml',policies=[KerasPolicy(featurizer),MemoizationPolicy(max_history=5)])
+    agent = Agent('./restaurant_domain.yml',policies=[KerasPolicy(featurizer),MemoizationPolicy(max_history=100)])
 
     agent.train(training_data_file,
     augmentation_factor = 50,
